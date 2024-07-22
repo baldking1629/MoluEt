@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoluEt", "MoluEt\MoluEt.csproj", "{A778F7C8-21EA-4F30-AC8C-E5F98830C43C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A778F7C8-21EA-4F30-AC8C-E5F98830C43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A778F7C8-21EA-4F30-AC8C-E5F98830C43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A778F7C8-21EA-4F30-AC8C-E5F98830C43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A778F7C8-21EA-4F30-AC8C-E5F98830C43C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2043691E-A9DD-4FD7-B062-A369BB931751}
+	EndGlobalSection
+EndGlobal

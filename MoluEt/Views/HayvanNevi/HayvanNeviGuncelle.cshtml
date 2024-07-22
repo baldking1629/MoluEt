@@ -1,0 +1,16 @@
+﻿@model MoluEt.Models.HayvanNevi
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form asp-action="HayvanNeviGuncelle" asp-controller="HayvanNevi" method="post">
+
+    <label style="width:100px">Nevi No</label><input style="width:350px" class="input-group-lg" name="NEVI_NO" value="@Model.NEVI_NO" />
+    <br />
+    <label style="width:100px">Nevi Adi</label><input style="width:350px" name="NEVI_ADI" value="@Model.NEVI_ADI" />
+    <br />
+    <label style="width:100px">Açıklama</label><input style="width:350px" name="ACIKLAMA" value="@Model.ACIKLAMA" /><br />
+
+    <br />
+
+    <button asp-action="HayvanNeviGuncelle" asp-controller="HayvanNevi">Hayvan Güncelle</button>
+</form>
+

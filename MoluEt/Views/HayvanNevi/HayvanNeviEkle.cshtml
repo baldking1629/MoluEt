@@ -1,0 +1,15 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form asp-action="HayvanNeviEkle" asp-controller="HayvanNevi" method="post">
+
+    <input placeholder="Nevi No" class="input-group-lg" name="NEVI_NO" />
+
+    <input placeholder="Nevi Adi" class="input-group" name="NEVI_ADI" />
+
+    <input placeholder="Açıklama" class="input-group" name="ACIKLAMA" />
+    
+
+
+    <button asp-action="HayvanNeviEkle" asp-controller="HayvanNevi">Hayvan Ekle</button>
+</form>
+

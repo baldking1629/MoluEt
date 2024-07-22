@@ -1,0 +1,25 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<MoluEt.Models.HayvanNevi>
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Nevi No</th>
+        <th>Nevi Adi</th>
+        <th>Açıklama</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>@item.NEVI_NO</td>
+            <td><a href="~/HayvanNevi/HayvanNeviGuncelle/@item.NEVI_NO">@item.NEVI_ADI</a></td>
+            <td>@item.ACIKLAMA</td>
+        </tr>
+    }
+
+
+</table>
+<a href="~/HayvanNevi/HayvanNeviEkle" class="btn btn-danger">Hayvan Ekle</a>
