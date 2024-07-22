@@ -103,7 +103,7 @@ namespace MoluEt.services
             OracleConnection connection = new OracleConnection(_connectionString);
             connection.Open();
             var command = connection.CreateCommand();
-            int nevino = GetList().Last().NEVI_NO +1 ;
+            int nevino = GetList().Max(o => o.NEVI_NO) +1 ;
             command.CommandText = $"INSERT INTO CFKTT020 (SIRKETNO,NEVI_NO,NEVI_ADI,ACIKLAMA) VALUES(1,{nevino},'{h.NEVI_ADI}','{h.ACIKLAMA}')";
             command.ExecuteNonQuery();
         }

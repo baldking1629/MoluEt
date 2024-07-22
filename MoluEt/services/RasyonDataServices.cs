@@ -294,7 +294,7 @@ namespace MoluEt.services
             }
             else
             {
-                sirano = GetListRasyonDetayById(r.URUNNO, r.CIFTLIKNO).Last().SIRANO + 1;
+                sirano = GetListRasyonDetayById(r.URUNNO, r.CIFTLIKNO).Max(o => o.SIRANO) + 1;
             }
             
             command.CommandText = $"INSERT INTO CFKDT003 (SIRKETNO,CIFTLIKNO,URUNNO,SIRANO,EMTIANO,MIKTAR) VALUES(1,{r.CIFTLIKNO},{r.URUNNO},{sirano},{r.EMTIANO},{r.MIKTAR})";
